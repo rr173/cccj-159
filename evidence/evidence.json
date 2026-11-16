@@ -1,0 +1,861 @@
+{
+  "catalogue": "/tmp/matview-evidence-tmz9kziq/catalogue",
+  "checks": {
+    "global_base_read_only_null_region": true,
+    "global_totals": true,
+    "no_group_credited_twice": true,
+    "null_dates_read_one_row_no_scan": true
+  },
+  "n_facts": 6,
+  "product_files_at_build": {
+    "M1": {
+      "data": {
+        "mtime": 1794867120.600255,
+        "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-d6643cf092594aa3/data.sqlite",
+        "sha256": "bfbc143353c0ca5c359c2002355af3bd10d1db34a6d54457aca1aa605cd21b94",
+        "size": 8192
+      },
+      "mat_id": "mat-d6643cf092594aa3",
+      "meta": {
+        "mtime": 1794867120.601255,
+        "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-d6643cf092594aa3/MAT.json",
+        "sha256": "da0a6ade765ea6d45729068a47c597fd640d159ba824c38f8a798602d5469ed4",
+        "size": 682
+      }
+    },
+    "M2": {
+      "data": {
+        "mtime": 1794867120.605255,
+        "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-e9aad3d9f4ce4d3d/data.sqlite",
+        "sha256": "2286f24a2c3ac8fd2932b53e7de1f78f1dcc5f75bc26b158ae0c132b6c8d9add",
+        "size": 8192
+      },
+      "mat_id": "mat-e9aad3d9f4ce4d3d",
+      "meta": {
+        "mtime": 1794867120.607255,
+        "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-e9aad3d9f4ce4d3d/MAT.json",
+        "sha256": "283ab2182f3da72b5c797f9fb6e5b59f7601838709602b0c16bd14528ddc6615",
+        "size": 682
+      }
+    }
+  },
+  "scenarios": {
+    "dates_2_to_4": {
+      "answer": [
+        {
+          "cnt": 1,
+          "group": {
+            "d": 2
+          },
+          "mean": null,
+          "nn": 0,
+          "total": null
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 3
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 30,
+            "value": 30.0
+          },
+          "nn": 1,
+          "total": 30
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 4
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 40,
+            "value": 40.0
+          },
+          "nn": 1,
+          "total": 40
+        }
+      ],
+      "base_full_scan": false,
+      "base_rows_admitted": 0,
+      "base_rows_scanned": 0,
+      "base_segments": [
+        {
+          "full_base_scan": null,
+          "reason": "materialisations cover the full query region",
+          "rows_admitted": null,
+          "rows_scanned": 0,
+          "worlds": []
+        }
+      ],
+      "mat_files_opened": {
+        "mat-d6643cf092594aa3": {
+          "mtime": 1794867120.600255,
+          "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-d6643cf092594aa3/data.sqlite",
+          "sha256": "bfbc143353c0ca5c359c2002355af3bd10d1db34a6d54457aca1aa605cd21b94",
+          "size": 8192
+        },
+        "mat-e9aad3d9f4ce4d3d": {
+          "mtime": 1794867120.605255,
+          "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-e9aad3d9f4ce4d3d/data.sqlite",
+          "sha256": "2286f24a2c3ac8fd2932b53e7de1f78f1dcc5f75bc26b158ae0c132b6c8d9add",
+          "size": 8192
+        }
+      },
+      "materialisation_segments": [
+        {
+          "gid": 1,
+          "group_key": [
+            2
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 2,
+                  "lo": 2
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 2,
+          "group_key": [
+            3
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 3,
+                  "lo": 3
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 2,
+          "group_key": [
+            4
+          ],
+          "name": "M2",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 4,
+                  "lo": 4
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        }
+      ],
+      "total_facts": null,
+      "world_queries": []
+    },
+    "global_all_dates": {
+      "answer": [
+        {
+          "cnt": 6,
+          "group": {},
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 38,
+            "value": 38.0
+          },
+          "nn": 5,
+          "total": 190
+        }
+      ],
+      "base_full_scan": false,
+      "base_rows_admitted": 1,
+      "base_rows_scanned": 1,
+      "base_segments": [
+        {
+          "full_base_scan": null,
+          "reason": "three-valued complement of the credited materialisation regions",
+          "rows_admitted": 1,
+          "rows_scanned": 1,
+          "worlds": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": null,
+                  "lo": 6
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 0,
+                  "lo": null
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "is_null": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mat_files_opened": {
+        "mat-d6643cf092594aa3": {
+          "mtime": 1794867120.600255,
+          "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-d6643cf092594aa3/data.sqlite",
+          "sha256": "bfbc143353c0ca5c359c2002355af3bd10d1db34a6d54457aca1aa605cd21b94",
+          "size": 8192
+        },
+        "mat-e9aad3d9f4ce4d3d": {
+          "mtime": 1794867120.605255,
+          "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-e9aad3d9f4ce4d3d/data.sqlite",
+          "sha256": "2286f24a2c3ac8fd2932b53e7de1f78f1dcc5f75bc26b158ae0c132b6c8d9add",
+          "size": 8192
+        }
+      },
+      "materialisation_segments": [
+        {
+          "gid": 0,
+          "group_key": [
+            1
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 1,
+                  "lo": 1
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 1,
+          "group_key": [
+            2
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 2,
+                  "lo": 2
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 2,
+          "group_key": [
+            3
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 3,
+                  "lo": 3
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 0,
+          "group_key": [
+            5
+          ],
+          "name": "M2",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 5,
+                  "lo": 5
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 2,
+          "group_key": [
+            4
+          ],
+          "name": "M2",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 4,
+                  "lo": 4
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        }
+      ],
+      "total_facts": 6,
+      "world_queries": [
+        {
+          "params": [
+            6
+          ],
+          "rows_examined": 0,
+          "sql": "\"d\" >= ?"
+        },
+        {
+          "params": [
+            0
+          ],
+          "rows_examined": 0,
+          "sql": "\"d\" <= ?"
+        },
+        {
+          "params": [],
+          "rows_examined": 1,
+          "sql": "\"d\" IS NULL"
+        }
+      ]
+    },
+    "not_equal_3": {
+      "answer": [
+        {
+          "cnt": 1,
+          "group": {
+            "d": 1
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 10,
+            "value": 10.0
+          },
+          "nn": 1,
+          "total": 10
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 2
+          },
+          "mean": null,
+          "nn": 0,
+          "total": null
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 4
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 40,
+            "value": 40.0
+          },
+          "nn": 1,
+          "total": 40
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 5
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 50,
+            "value": 50.0
+          },
+          "nn": 1,
+          "total": 50
+        }
+      ],
+      "base_full_scan": false,
+      "base_rows_admitted": 0,
+      "base_rows_scanned": 0,
+      "base_segments": [
+        {
+          "full_base_scan": null,
+          "reason": "three-valued complement of the credited materialisation regions",
+          "rows_admitted": 0,
+          "rows_scanned": 0,
+          "worlds": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": null,
+                  "lo": 6
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 0,
+                  "lo": null
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mat_files_opened": {
+        "mat-d6643cf092594aa3": {
+          "mtime": 1794867120.600255,
+          "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-d6643cf092594aa3/data.sqlite",
+          "sha256": "bfbc143353c0ca5c359c2002355af3bd10d1db34a6d54457aca1aa605cd21b94",
+          "size": 8192
+        },
+        "mat-e9aad3d9f4ce4d3d": {
+          "mtime": 1794867120.605255,
+          "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-e9aad3d9f4ce4d3d/data.sqlite",
+          "sha256": "2286f24a2c3ac8fd2932b53e7de1f78f1dcc5f75bc26b158ae0c132b6c8d9add",
+          "size": 8192
+        }
+      },
+      "materialisation_segments": [
+        {
+          "gid": 0,
+          "group_key": [
+            1
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 1,
+                  "lo": 1
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 1,
+          "group_key": [
+            2
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 2,
+                  "lo": 2
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 0,
+          "group_key": [
+            5
+          ],
+          "name": "M2",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 5,
+                  "lo": 5
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 2,
+          "group_key": [
+            4
+          ],
+          "name": "M2",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 4,
+                  "lo": 4
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        }
+      ],
+      "total_facts": 6,
+      "world_queries": [
+        {
+          "params": [
+            6
+          ],
+          "rows_examined": 0,
+          "sql": "\"d\" >= ?"
+        },
+        {
+          "params": [
+            0
+          ],
+          "rows_examined": 0,
+          "sql": "\"d\" <= ?"
+        }
+      ]
+    },
+    "null_dates_only": {
+      "answer": [
+        {
+          "cnt": 1,
+          "group": {
+            "d": null
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 60,
+            "value": 60.0
+          },
+          "nn": 1,
+          "total": 60
+        }
+      ],
+      "base_full_scan": false,
+      "base_rows_admitted": 1,
+      "base_rows_scanned": 1,
+      "base_segments": [
+        {
+          "full_base_scan": null,
+          "reason": "no materialised group is provably inside the query and uncredited here",
+          "rows_admitted": 1,
+          "rows_scanned": 1,
+          "worlds": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "is_null": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mat_files_opened": {},
+      "materialisation_segments": [],
+      "total_facts": 6,
+      "world_queries": [
+        {
+          "params": [],
+          "rows_examined": 1,
+          "sql": "\"d\" IS NULL"
+        }
+      ]
+    },
+    "per_date": {
+      "answer": [
+        {
+          "cnt": 1,
+          "group": {
+            "d": 1
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 10,
+            "value": 10.0
+          },
+          "nn": 1,
+          "total": 10
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 2
+          },
+          "mean": null,
+          "nn": 0,
+          "total": null
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 3
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 30,
+            "value": 30.0
+          },
+          "nn": 1,
+          "total": 30
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 4
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 40,
+            "value": 40.0
+          },
+          "nn": 1,
+          "total": 40
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": 5
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 50,
+            "value": 50.0
+          },
+          "nn": 1,
+          "total": 50
+        },
+        {
+          "cnt": 1,
+          "group": {
+            "d": null
+          },
+          "mean": {
+            "__fraction__": true,
+            "den": 1,
+            "num": 60,
+            "value": 60.0
+          },
+          "nn": 1,
+          "total": 60
+        }
+      ],
+      "base_full_scan": false,
+      "base_rows_admitted": 1,
+      "base_rows_scanned": 1,
+      "base_segments": [
+        {
+          "full_base_scan": null,
+          "reason": "three-valued complement of the credited materialisation regions",
+          "rows_admitted": 1,
+          "rows_scanned": 1,
+          "worlds": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": null,
+                  "lo": 6
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 0,
+                  "lo": null
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "is_null": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mat_files_opened": {
+        "mat-d6643cf092594aa3": {
+          "mtime": 1794867120.600255,
+          "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-d6643cf092594aa3/data.sqlite",
+          "sha256": "bfbc143353c0ca5c359c2002355af3bd10d1db34a6d54457aca1aa605cd21b94",
+          "size": 8192
+        },
+        "mat-e9aad3d9f4ce4d3d": {
+          "mtime": 1794867120.605255,
+          "path": "/tmp/matview-evidence-tmz9kziq/catalogue/snapshots/snap-3bb96b6b6a4146d8/mat/mat-e9aad3d9f4ce4d3d/data.sqlite",
+          "sha256": "2286f24a2c3ac8fd2932b53e7de1f78f1dcc5f75bc26b158ae0c132b6c8d9add",
+          "size": 8192
+        }
+      },
+      "materialisation_segments": [
+        {
+          "gid": 0,
+          "group_key": [
+            1
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 1,
+                  "lo": 1
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 1,
+          "group_key": [
+            2
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 2,
+                  "lo": 2
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 2,
+          "group_key": [
+            3
+          ],
+          "name": "M1",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 3,
+                  "lo": 3
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 0,
+          "group_key": [
+            5
+          ],
+          "name": "M2",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 5,
+                  "lo": 5
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        },
+        {
+          "gid": 2,
+          "group_key": [
+            4
+          ],
+          "name": "M2",
+          "region": [
+            {
+              "and": [
+                {
+                  "col": "d",
+                  "hi": 4,
+                  "lo": 4
+                }
+              ]
+            }
+          ],
+          "rows_credited": 1
+        }
+      ],
+      "total_facts": 6,
+      "world_queries": [
+        {
+          "params": [
+            6
+          ],
+          "rows_examined": 0,
+          "sql": "\"d\" >= ?"
+        },
+        {
+          "params": [
+            0
+          ],
+          "rows_examined": 0,
+          "sql": "\"d\" <= ?"
+        },
+        {
+          "params": [],
+          "rows_examined": 1,
+          "sql": "\"d\" IS NULL"
+        }
+      ]
+    }
+  },
+  "snapshot_fact_digest": "9449852a76f4d2221787d9697bad453eecccac18544bf8b820caa15f89efc585",
+  "snapshot_id": "snap-3bb96b6b6a4146d8"
+}
