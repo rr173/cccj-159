@@ -15,11 +15,35 @@ Pure standard library (Python 3.9+, SQLite 3.35+).  No dependencies.
 
 ```bash
 python3 demo/six_rows.py              # the six-row worked example
+python3 demo/history_warehouse.py     # bi-temporal history join walkthrough
 python3 -m unittest discover -s tests -t . -p 'test_*.py'
 python3 demo/record_evidence.py       # writes evidence/evidence.json
 ```
 
-The CLI mirrors the API:
+## Offline history warehouse (`histjoin`)
+
+The query layer reads a fixed fact table; producing that table from raw orders
+and two levels of bi-temporal dimension history is the job of the separate
+`histjoin` package (see [HISTJOIN.md](HISTJOIN.md) for the full design).  It
+joins each order's `(event_time, known_time)` point against customer→store and
+store→region history, applies the top-priority-only rule (with distinct
+`gap` / `deleted` / `null_value` / `conflict` outcomes and all tied
+`version_id`s retained), writes a fact database in the exact shape
+`build_snapshot` consumes, and publishes a per-row lineage trail plus an
+isolation list.  It never changes the materialisation algorithm.
+
+```bash
+python -m histjoin.cli build ORDERS CUSTOMER_HIST STORE_HIST OUT_DIR
+python -m histjoin.cli lineage    OUT_DIR ROW_ID
+python -m histjoin.cli quarantine OUT_DIR
+python -m histjoin.cli counts     OUT_DIR
+```
+
+A reproducible 100k-version hot-key / 100k-order generator runs the two-level
+join on one CPU under a 256 MiB cap in well under 180 s; see
+`demo/run_hotkey.py` and the recorded `evidence/hotkey-report.json`.
+
+## The CLI mirrors the API:
 
 ```bash
 python3 -m matview.cli build   CAT DIR/facts.sqlite schema.json specs.json

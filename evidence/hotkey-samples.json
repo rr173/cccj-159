@@ -1,0 +1,286 @@
+{
+  "all_samples_ok": true,
+  "samples": [
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s21",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/deleted",
+      "ok": true,
+      "region": null,
+      "row_id": "s00",
+      "store": null
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s38",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s02",
+      "store": "S1"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s05",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s39",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s29",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/deleted",
+      "ok": true,
+      "region": null,
+      "row_id": "s28",
+      "store": null
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s10",
+      "store": "S1"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s13",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s18",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s36",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/deleted",
+      "ok": true,
+      "region": null,
+      "row_id": "s14",
+      "store": null
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s31",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s11",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s27",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s19",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s12",
+      "store": "S1"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s17",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s15",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s32",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s34",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s30",
+      "store": "S1"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s25",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s22",
+      "store": "S1"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s35",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s07",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s37",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s01",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s24",
+      "store": "S1"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s09",
+      "store": "S0"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s23",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s26",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s06",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s20",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s04",
+      "store": "S1"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s16",
+      "store": "S1"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s03",
+      "store": "S0"
+    },
+    {
+      "expected": "quarantine/gap",
+      "ok": true,
+      "region": null,
+      "row_id": "s08",
+      "store": "S1"
+    },
+    {
+      "expected": "fact",
+      "ok": true,
+      "region": "R0",
+      "row_id": "s33",
+      "store": "S0"
+    }
+  ],
+  "samples_checked": 40
+}

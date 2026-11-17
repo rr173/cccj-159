@@ -2,3 +2,10 @@ __pycache__/
 *.pyc
 demo/_run/
 evidence/*.sqlite
+# large hot-key generator outputs and scratch databases are never committed;
+# only the small JSON reports under evidence/ are kept
+hotkey-data/
+*.work.sqlite
+histjoin-work-*.sqlite
+.warehouse-build-*
+.warehouse-old-*

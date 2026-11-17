@@ -1,0 +1,19 @@
+{
+  "cache_kib": 32768,
+  "chunk": 2000,
+  "counts": {
+    "customer_history": 200000,
+    "facts": 70288,
+    "orders": 100000,
+    "quarantine": 29712,
+    "store_history": 107700
+  },
+  "elapsed_seconds": 18.346,
+  "facts": 70288,
+  "memory_limit_mib": 256,
+  "partition_complete": true,
+  "peak_rss_mib": 63.83,
+  "quarantine": 29712,
+  "time_limit_seconds": 180,
+  "within_time_limit": true
+}

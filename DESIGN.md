@@ -103,3 +103,18 @@ region algebra against a finite domain by brute-force membership.  The
 randomised suite (`test_property.py`) exercises overlapping, contained,
 disjoint, holed and finer/coarser materialisations over random predicates with
 NULLs.
+
+## History-join exactness and the disk-backed sweep
+
+The upstream `histjoin` warehouse has its own design note (`HISTJOIN.md`).  The
+key resource decision is recorded here as well: the bi-temporal adjudication is
+exact (integer half-open interval tests, top-priority-only comparison with no
+recency/file-order tie-break), but it is executed as a per-key merge sweep over
+indexed streams rather than a point query, because a naive point lookup against
+100k versions of one hot key repeated for 100k orders examines ~5e9 rows.  The
+"active" version set, the outcomes and the provenance — including pathological
+thousands-way top-tier ties — live in capped-buffer/disk-spilling SQLite
+structures, never in Python lists, which is how the 256 MiB / single-CPU /
+180 s contract is met without weakening the semantics.  Its independent oracle
+(`tests/histjoin_refimpl.py`) scans the raw histories itself and imports no
+product resolution code; randomised and 100k-scale runs are compared against it.
